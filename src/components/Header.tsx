@@ -1,14 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Clock } from "lucide-react";
+import bekaboLogo from "@/assets/bekabo-logo.png";
 
 export const Header = () => {
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-primary">Bekabo</h1>
-            <span className="text-muted-foreground">Bäckerei & Konditorei</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src={bekaboLogo} 
+              alt="Bekabo Logo" 
+              className="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <h1 className="text-2xl font-bold text-primary">Bekabo</h1>
+              <span className="text-sm text-muted-foreground">Bäckerei & Konditorei</span>
+            </div>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">

@@ -1,4 +1,5 @@
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import bekaboLogo from "@/assets/bekabo-logo.png";
 
 export const Footer = () => {
   return (
@@ -6,7 +7,14 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Bekabo</h3>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={bekaboLogo} 
+                alt="Bekabo Logo" 
+                className="w-10 h-10 rounded-full object-cover"
+              />
+              <h3 className="text-2xl font-bold">Bekabo</h3>
+            </div>
             <p className="text-white/80">
               Ihre Schweizer Bäckerei für traumhafte Geburtstagstorten 
               und süße Kreationen in Zürich.
